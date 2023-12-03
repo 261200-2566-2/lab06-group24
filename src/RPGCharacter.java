@@ -118,11 +118,11 @@ abstract class BaseCharacter implements RPGCharacter{
 
 
     /** Equipped items: main hand, sub hand, amulet, ring, and earring. */
-    MainWeapon mainHand;
-    SubWeapon subHand;
-    Amulet amulet;
-    Ring ring;
-    Earring earring;
+    private MainWeapon mainHand;
+    private SubWeapon subHand;
+    private Amulet amulet;
+    private Ring ring;
+    private Earring earring;
 
     /**
      * Initializes a new BaseCharacter with the provided values.
