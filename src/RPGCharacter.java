@@ -88,7 +88,7 @@ public interface RPGCharacter {
                 case null, default -> System.out.print("");
             }
         }
-    }   
+    }
 }
 
 /**
@@ -257,13 +257,19 @@ abstract class BaseCharacter implements RPGCharacter{
  */
 class WarriorCharacter extends BaseCharacter implements Warrior{
 
+    // Default values for warrior character attributes
+    private static final int Default_Warrior_Level = 1;
+    private static final int Default_Warrior_MaxHP = 150;
+    private static final int Default_Warrior_MaxMana = 25;
+    private static final int Default_Warrior_BaseSpeed = 100;
+
     /**
      * Initializes a new WarriorCharacter with name and the initial base stats of a warrior job at level 1.
      *
      * @param name name of the warrior character.
      */
     WarriorCharacter(String name){
-        super(name,1,150,25,100);
+        super(name, Default_Warrior_Level, Default_Warrior_MaxHP, Default_Warrior_MaxMana, Default_Warrior_BaseSpeed);
     }
 
     /**
@@ -301,13 +307,19 @@ class WarriorCharacter extends BaseCharacter implements Warrior{
  */
 class MageCharacter extends  BaseCharacter implements  Mage{
 
+    // Default values for mage character attributes
+    private static final int Default_Mage_Level = 1;
+    private static final int Default_Mage_MaxHP = 50;
+    private static final int Default_Mage_MaxMana = 125;
+    private static final int Default_Mage_BaseSpeed = 80;
+
     /**
      * Initializes a new MageCharacter with name and the initial base stats of a mage job at level 1.
      *
      * @param name name of the mage character.
      */
     MageCharacter(String name) {
-        super(name, 1, 50, 125, 80);
+        super(name, Default_Mage_Level, Default_Mage_MaxHP, Default_Mage_MaxMana, Default_Mage_BaseSpeed);
     }
 
     /**
@@ -345,13 +357,19 @@ class MageCharacter extends  BaseCharacter implements  Mage{
  */
 class ArcherCharacter extends BaseCharacter implements  Archer{
 
+    // Default values for archer character attributes
+    private static final int Default_Archer_Level = 1;
+    private static final int Default_Archer_MaxHP = 100;
+    private static final int Default_Archer_MaxMana = 75;
+    private static final int Default_Archer_BaseSpeed = 150;
+
     /**
      * Initializes a new ArcherCharacter with name and the initial base stats of an archer job at level 1.
      *
      * @param name name of the archer character.
      */
     ArcherCharacter(String name) {
-        super(name, 1,100, 75, 150);
+        super(name, Default_Archer_Level, Default_Archer_MaxHP, Default_Archer_MaxMana, Default_Archer_BaseSpeed);
     }
 
     /**
