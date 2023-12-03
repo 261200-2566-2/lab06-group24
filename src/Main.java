@@ -3,6 +3,8 @@ public class Main {
         // For testing
         RPGCharacter james = new WarriorCharacter("James");
         james.showCharacterInfo();
+        ((Job)james).showAllAbilities();
+        System.out.println("======================================");
 
         System.out.println("======================================");
         Accessory blood = new Ring("Vampire's Ring", "Life steal", 0.155);
