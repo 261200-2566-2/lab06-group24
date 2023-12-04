@@ -24,11 +24,10 @@ public interface Job extends RPGCharacter{
      */
     default void showAllAbilities() {
         System.out.println("Job : " + getJobName());
-        System.out.print("Abilities : ");
+        System.out.println("Abilities : ");
         for (String ability : getAllAbility()) {
-            System.out.print(ability + " ");
+            System.out.print(getJobName() + " ");
         }
-        System.out.println();
     }
 }
 
@@ -64,7 +63,7 @@ interface Warrior extends Job{
      * @return A string array of all abilities for warriors.
      */
     default String[] getAllAbility(){
-        return new String[]{"Slash", "Block"};
+        return new String[]{"Slash", "Black"};
     }
 
 }
