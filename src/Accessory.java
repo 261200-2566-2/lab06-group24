@@ -31,7 +31,7 @@ public interface Accessory {
        */
       default void showStats(){
             System.out.println("Name : " + getName());
-            System.out.println("Effect : " + getEffectType() + " " + getEffectValue()*100 + "%");
+            System.out.println("Effect : " + getEffectType() + " " + getEffectValue() * 100 + "%");
       }
 }
 
